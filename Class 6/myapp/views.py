@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from myapp.models import *
-
+from django.shortcuts import redirect
 # Create function
 def create(request):
     if request.method == 'POST':
