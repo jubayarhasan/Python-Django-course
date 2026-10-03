@@ -13,3 +13,9 @@ def create(request):
         return redirect('read.html')
     
     return render(request, 'create.html')
+
+
+# read function
+def read (request):
+    students = Student.objects.all()
+    return render(request, 'read.html', {'students': students})
